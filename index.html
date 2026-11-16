@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Ilham Rizky Putra - Web Developer & Sistem Informasi Industri Otomotif Graduate. Lihat project, sertifikat, skill, dan informasi kontak." />
+  <title>Ilham Rizky Putra | Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="splash.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SPLASH SCREEN ===== -->
+  <div id="splash-screen" class="splash" role="dialog" aria-label="Loading portfolio" aria-modal="true">
+
+    <!-- Particle canvas background -->
+    <canvas id="splash-canvas" class="splash-canvas"></canvas>
+
+    <!-- Grid overlay -->
+    <div class="splash-grid"></div>
+
+    <!-- Noise texture overlay -->
+    <div class="splash-noise"></div>
+
+    <!-- Center content -->
+    <div class="splash-content">
+
+      <!-- Logo ring + initial -->
+      <div class="splash-logo-wrap" id="splash-logo">
+        <div class="splash-logo-ring splash-ring-1"></div>
+        <div class="splash-logo-ring splash-ring-2"></div>
+        <div class="splash-logo-ring splash-ring-3"></div>
+        <div class="splash-logo-core">
+          <span class="splash-initial">I</span>
+        </div>
+        <div class="splash-logo-glow"></div>
+      </div>
+
+      <!-- Text block -->
+      <div class="splash-text-block" id="splash-text">
+        <p class="splash-greeting">— Welcome —</p>
+        <h1 class="splash-title" id="splash-title">
+          <span class="splash-word" style="--i:0">WELCOME</span>
+          <span class="splash-word" style="--i:1">TO</span>
+          <span class="splash-word" style="--i:2">MY</span>
+          <span class="splash-word splash-word-accent" style="--i:3">PORTFOLIO</span>
+        </h1>
+        <p class="splash-sub" id="splash-sub">
+          <span class="splash-name">Ilham Rizky Putra</span>
+          <span class="splash-sep">·</span>
+          <span class="splash-role">Sistem Informasi Industri Otomotif</span>
+        </p>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="splash-progress-wrap" id="splash-progress-wrap">
+        <div class="splash-progress-track">
+          <div class="splash-progress-bar" id="splash-bar"></div>
+          <div class="splash-progress-glow"></div>
+        </div>
+        <span class="splash-progress-label" id="splash-label">0%</span>
+      </div>
+
+    </div>
+
+    <!-- Corner decorations -->
+    <div class="splash-corner splash-corner-tl"></div>
+    <div class="splash-corner splash-corner-tr"></div>
+    <div class="splash-corner splash-corner-bl"></div>
+    <div class="splash-corner splash-corner-br"></div>
+
+    <!-- Scan line -->
+    <div class="splash-scanline" id="splash-scanline"></div>
+
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#tentang" class="nav-logo">ILHAM RIZKY PUTRA<span class="dot">.</span></a>
+      <nav class="nav-links">
+        <a href="#tentang" class="nav-link active" id="nav-tentang">Tentang</a>
+        <a href="#project" class="nav-link" id="nav-project">Project</a>
+        <a href="#sertifikat" class="nav-link" id="nav-sertifikat">Sertifikat</a>
+        <a href="#skill" class="nav-link" id="nav-skill">Skill</a>
+        <a href="#kontak" class="nav-link" id="nav-kontak">Kontak</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO / TENTANG ===== -->
+  <section class="section" id="tentang">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left: About Text -->
+        <div class="about-card glass-card reveal">
+          <h2 class="section-title"><span class="emoji">👋</span> Tentang Saya</h2>
+          <p class="about-text">
+            Halo, saya <strong>Ilham Rizky Putra</strong>, lulusan <strong>Sistem Informasi Industri Otomotif</strong> yang memiliki ketertarikan besar terhadap perkembangan teknologi informasi, khususnya dalam bidang
+            <span class="highlight">Web Development, perancangan sistem informasi, dan pengelolaan database.</span>
+            Saya memiliki antusiasme dalam mempelajari bagaimana teknologi dapat dimanfaatkan untuk menghasilkan solusi digital yang mampu menjawab berbagai kebutuhan serta memberikan kemudahan dalam aktivitas sehari-hari maupun proses bisnis perusahaan.
+          </p>
+          <p class="about-text">
+            Selama menempuh pendidikan, saya mempelajari berbagai konsep dan penerapan teknologi informasi, mulai dari analisis kebutuhan sistem, perancangan proses bisnis, pengelolaan basis data, hingga pengembangan aplikasi berbasis web. Pengetahuan tersebut menjadi bekal bagi saya untuk memahami proses pengembangan sistem secara terstruktur, mulai dari mengidentifikasi permasalahan, menyusun kebutuhan, merancang solusi, hingga mengimplementasikannya menjadi sebuah sistem yang dapat digunakan.
+          </p>
+
+          <div class="skill-utama">
+            <h3 class="sub-title"><span class="emoji">🛠</span> Skill Utama</h3>
+            <div class="badge-row">
+              <span class="badge badge-blue">🌐 Web Development</span>
+              <span class="badge badge-purple">🤖 Machine Learning</span>
+              <span class="badge badge-orange">🗄️ Database</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Profile Card -->
+        <div class="profile-card glass-card reveal reveal-delay">
+          <div class="avatar-wrap">
+            <img src="Foto Profil.jpeg" alt="Foto Profil Ilham Rizky Putra" class="avatar-img" id="avatar" />
+            <div class="avatar-ring"></div>
+          </div>
+          <h3 class="profile-name">Ilham Rizky Putra</h3>
+          <span class="profile-badge">Sistem Informasi Industri Otomotif</span>
+          <ul class="profile-info">
+            <li><span class="info-icon">📧</span> ilhamrizkyputra740@gmail.com</li>
+            <li><span class="info-icon">📍</span> Indonesia</li>
+          </ul>
+          <a href="CV - Ilham Rizky Putra.pdf" class="btn-cv" id="download-cv" download="CV - Ilham Rizky Putra.pdf">⬇️ Download CV</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECT ===== -->
+  <section class="section section-alt" id="project">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading"><span class="emoji">🚀</span> Project Saya</h2>
+        <p class="section-sub">Beberapa proyek yang telah saya kerjakan</p>
+      </div>
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal" id="project-1">
+          <div class="project-img-wrap" onclick="openLightbox('1. Redesign User Interface Website &Mobile Suzuki..jpeg')">
+            <img src="1. Redesign User Interface Website &Mobile Suzuki..jpeg" alt="Redesign UI Suzuki" class="project-real-img" />
+            <div class="project-img-overlay"><span class="project-zoom">🔍 Lihat Detail</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">UI Design</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Mobile</span>
+            </div>
+            <h3 class="project-title">Redesign UI Website & Mobile Suzuki</h3>
+            <p class="project-desc">Perancangan ulang tampilan antarmuka website dan aplikasi mobile Suzuki untuk menciptakan pengalaman pengguna yang lebih modern, intuitif, dan mudah digunakan.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal reveal-delay" id="project-2">
+          <div class="project-img-wrap" onclick="openLightbox('2. UserInterface Design Website Penjualan Jersey Sepakbola..jpeg')">
+            <img src="2. UserInterface Design Website Penjualan Jersey Sepakbola..jpeg" alt="UI Design Jersey" class="project-real-img" />
+            <div class="project-img-overlay"><span class="project-zoom">🔍 Lihat Detail</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">UI Design</span>
+              <span class="tag">E-Commerce</span>
+              <span class="tag">Figma</span>
+            </div>
+            <h3 class="project-title">UI Design Website Penjualan Jersey Sepak Bola</h3>
+            <p class="project-desc">Perancangan antarmuka website e-commerce penjualan jersey sepak bola dengan tampilan menarik dan navigasi sederhana untuk kemudahan pengguna.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal reveal-delay-2" id="project-3">
+          <div class="project-img-wrap" onclick="openLightbox('3. Sistem Pendeteksian Pengendara Roda Dua Menggunakan Helm.jpeg')">
+            <img src="3. Sistem Pendeteksian Pengendara Roda Dua Menggunakan Helm.jpeg" alt="Sistem Deteksi Helm" class="project-real-img" />
+            <div class="project-img-overlay"><span class="project-zoom">🔍 Lihat Detail</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">YOLO</span>
+            </div>
+            <h3 class="project-title">Sistem Pendeteksian Pengendara Roda Dua Menggunakan Helm</h3>
+            <p class="project-desc">Sistem pendeteksian penggunaan helm bagi pengendara roda dua menggunakan teknologi deteksi objek untuk membantu pemantauan keselamatan berkendara.</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-card reveal" id="project-4">
+          <div class="project-img-wrap" onclick="openLightbox('4. SistemInventaris Suku Cadang Otomotif Pada Bengkel Konvensional..jpeg')">
+            <img src="4. SistemInventaris Suku Cadang Otomotif Pada Bengkel Konvensional..jpeg" alt="Sistem Inventaris Bengkel" class="project-real-img" />
+            <div class="project-img-overlay"><span class="project-zoom">🔍 Lihat Detail</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Laravel</span>
+            </div>
+            <h3 class="project-title">Sistem Inventaris Suku Cadang Otomotif Pada Bengkel Konvensional</h3>
+            <p class="project-desc">Sistem informasi inventaris untuk membantu bengkel konvensional mengelola persediaan suku cadang otomotif secara terstruktur dan terdigitalisasi.</p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card glass-card reveal reveal-delay" id="project-5">
+          <div class="project-img-wrap" onclick="openLightbox('5. Sistem Pembelian Tiket Kereta Api.jpeg')">
+            <img src="5. Sistem Pembelian Tiket Kereta Api.jpeg" alt="Sistem Tiket Kereta" class="project-real-img" />
+            <div class="project-img-overlay"><span class="project-zoom">🔍 Lihat Detail</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Web App</span>
+            </div>
+            <h3 class="project-title">Sistem Pembelian Tiket Kereta Api</h3>
+            <p class="project-desc">Sistem informasi pembelian tiket kereta api berbasis digital untuk mempermudah pengguna mengakses informasi perjalanan dan melakukan pemesanan tiket.</p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card glass-card reveal reveal-delay-2" id="project-6">
+          <div class="project-img-wrap" onclick="openLightbox('6. Sistem Pencatatan Stock Isuzu MIIStock.jpeg')">
+            <img src="6. Sistem Pencatatan Stock Isuzu MIIStock.jpeg" alt="MIIStock Isuzu" class="project-real-img" />
+            <div class="project-img-overlay"><span class="project-zoom">🔍 Lihat Detail</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Dashboard</span>
+            </div>
+            <h3 class="project-title">Sistem Pencatatan Stock Isuzu MIIStock</h3>
+            <p class="project-desc">MIIStock adalah sistem informasi untuk pencatatan dan pengelolaan stok operasional Isuzu agar proses administrasi persediaan lebih terstruktur dan akurat.</p>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card glass-card reveal" id="project-7">
+          <div class="project-img-wrap" onclick="openLightbox('7. Sistem Digitalisasi PPBJ (Proposal Permintaan Barang &Jasa) & SR (Supplier.jpeg')">
+            <img src="7. Sistem Digitalisasi PPBJ (Proposal Permintaan Barang &Jasa) & SR (Supplier.jpeg" alt="Sistem PPBJ SR" class="project-real-img" />
+            <div class="project-img-overlay"><span class="project-zoom">🔍 Lihat Detail</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Laravel</span>
+              <span class="tag">Digitalisasi</span>
+            </div>
+            <h3 class="project-title">Sistem Digitalisasi PPBJ & SR</h3>
+            <p class="project-desc">Digitalisasi proses pengajuan Proposal Permintaan Barang & Jasa (PPBJ) dan Supplier Recommendation (SR) agar administrasi pengadaan lebih terstruktur dan terdokumentasi.</p>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card glass-card reveal reveal-delay" id="project-8">
+          <div class="project-img-wrap" onclick="openLightbox('8. Sistem Aplikasi Jual Beli Buku Book Buddies.jpeg')">
+            <img src="8. Sistem Aplikasi Jual Beli Buku Book Buddies.jpeg" alt="Book Buddies" class="project-real-img" />
+            <div class="project-img-overlay"><span class="project-zoom">🔍 Lihat Detail</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Android</span>
+              <span class="tag">Java</span>
+              <span class="tag">Firebase</span>
+            </div>
+            <h3 class="project-title">Sistem Aplikasi Jual Beli Buku Book Buddies</h3>
+            <p class="project-desc">Book Buddies adalah aplikasi jual beli buku yang menyediakan platform digital bagi pengguna untuk menemukan berbagai pilihan buku dan mendukung transaksi antara penjual dan pembeli.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERTIFIKAT ===== -->
+  <section class="section" id="sertifikat">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading"><span class="emoji">🏆</span> Sertifikat</h2>
+        <p class="section-sub">Pencapaian dan sertifikasi yang telah saya raih</p>
+      </div>
+      <div class="cert-grid cert-grid-real">
+
+        <!-- Sertifikat 1: Information Technology -->
+        <div class="cert-card-real glass-card reveal" id="cert-1">
+          <div class="cert-img-wrap" onclick="openLightbox('4. CERTIFICATE_ILHAM RIZKY PUTRA_INFORMATION TECHNOLOGY_page-0001.jpg')">
+            <img
+              src="4. CERTIFICATE_ILHAM RIZKY PUTRA_INFORMATION TECHNOLOGY_page-0001.jpg"
+              alt="Certificate Information Technology - Ilham Rizky Putra"
+              class="cert-img"
+            />
+            <div class="cert-img-overlay">
+              <span class="cert-zoom-icon">🔍 Lihat Penuh</span>
+            </div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-issuer">Information Technology</div>
+            <h3 class="cert-title">Certificate — Ilham Rizky Putra</h3>
+            <span class="cert-badge cert-badge-cyan">IT Certificate</span>
+          </div>
+        </div>
+
+        <!-- Sertifikat 2: WSIDN -->
+        <div class="cert-card-real glass-card reveal reveal-delay" id="cert-2">
+          <div class="cert-img-wrap" onclick="openLightbox('sertifikat-WSIDN-2106108178_page-0001.jpg')">
+            <img
+              src="sertifikat-WSIDN-2106108178_page-0001.jpg"
+              alt="Sertifikat WSIDN - Ilham Rizky Putra"
+              class="cert-img"
+            />
+            <div class="cert-img-overlay">
+              <span class="cert-zoom-icon">🔍 Lihat Penuh</span>
+            </div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-issuer">WSIDN — WorldSkills Indonesia</div>
+            <h3 class="cert-title">Sertifikat WSIDN-2106108178</h3>
+            <span class="cert-badge cert-badge-purple">WorldSkills</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILL ===== -->
+  <section class="section section-alt" id="skill">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading"><span class="emoji">⚡</span> Skill & Teknologi</h2>
+        <p class="section-sub">Teknologi dan tools yang saya kuasai</p>
+      </div>
+
+      <div class="skill-categories">
+
+        <!-- Jaringan & Perangkat Keras -->
+        <div class="skill-category glass-card reveal" id="skill-jaringan">
+          <h3 class="cat-title">🌐 Jaringan &amp; Perangkat Keras</h3>
+          <div class="skill-tags-wrap">
+            <span class="skill-tag">TCP/IP</span>
+            <span class="skill-tag">Subnetting (IPv4/IPv6)</span>
+            <span class="skill-tag">Routing &amp; Switching</span>
+            <span class="skill-tag">VLAN</span>
+            <span class="skill-tag">Inter-VLAN Routing</span>
+            <span class="skill-tag">DHCP</span>
+            <span class="skill-tag">DNS</span>
+            <span class="skill-tag">NAT</span>
+            <span class="skill-tag">Firewall</span>
+            <span class="skill-tag">MikroTik RouterOS</span>
+            <span class="skill-tag">Cisco Packet Tracer</span>
+            <span class="skill-tag">GNS3</span>
+            <span class="skill-tag">PNETLAB</span>
+            <span class="skill-tag">Crimping/UTP</span>
+            <span class="skill-tag">Pengujian Konektivitas</span>
+          </div>
+        </div>
+
+        <!-- Sistem Operasi & Server -->
+        <div class="skill-category glass-card reveal reveal-delay" id="skill-os">
+          <h3 class="cat-title">🖥️ Sistem Operasi &amp; Server</h3>
+          <div class="skill-tags-wrap">
+            <span class="skill-tag">Linux (Ubuntu/Debian)</span>
+            <span class="skill-tag">Windows Server</span>
+            <span class="skill-tag">Virtualisasi</span>
+            <span class="skill-tag">System Administration</span>
+            <span class="skill-tag">Troubleshooting Hardware</span>
+            <span class="skill-tag">LAN/WAN</span>
+          </div>
+        </div>
+
+        <!-- Pemrograman & Basis Data -->
+        <div class="skill-category glass-card reveal" id="skill-programming">
+          <h3 class="cat-title">💻 Pemrograman &amp; Basis Data</h3>
+          <div class="skill-tags-wrap">
+            <span class="skill-tag">Python (Network Automation)</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">SQL (MySQL)</span>
+            <span class="skill-tag">SQLYog</span>
+            <span class="skill-tag">Shell/Bash Scripting</span>
+          </div>
+        </div>
+
+        <!-- Tools & Manajemen -->
+        <div class="skill-category glass-card reveal reveal-delay" id="skill-tools">
+          <h3 class="cat-title">🛠️ Tools &amp; Manajemen</h3>
+          <div class="skill-tags-wrap">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Draw.io</span>
+            <span class="skill-tag">Ms Office</span>
+            <span class="skill-tag">Manajemen Proyek TI</span>
+            <span class="skill-tag">Analisis Proses Bisnis</span>
+          </div>
+        </div>
+
+        <!-- Bahasa -->
+        <div class="skill-category glass-card reveal" id="skill-bahasa">
+          <h3 class="cat-title">🌏 Bahasa</h3>
+          <div class="skill-tags-wrap">
+            <span class="skill-tag">Bahasa Indonesia (Native)</span>
+            <span class="skill-tag">Bahasa Inggris (Intermediate)</span>
+          </div>
+        </div>
+
+        <!-- Kemampuan Personal -->
+        <div class="skill-category glass-card reveal reveal-delay" id="skill-personal">
+          <h3 class="cat-title">🤝 Kemampuan Personal</h3>
+          <div class="skill-tags-wrap">
+            <span class="skill-tag">Komunikasi Efektif</span>
+            <span class="skill-tag">Kemampuan Beradaptasi</span>
+            <span class="skill-tag">Kerjasama Tim</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tech Stack Badges -->
+      <div class="tech-stack reveal">
+        <h3 class="sub-title" style="text-align:center;margin-bottom:1.5rem;">🧰 Tech Stack</h3>
+        <div class="tech-badges">
+          <span class="tech-badge">🖧 Cisco Packet Tracer</span>
+          <span class="tech-badge">📡 Winbox MikroTik</span>
+          <span class="tech-badge">🔬 PNetlab</span>
+          <span class="tech-badge">🌐 GNS3</span>
+          <span class="tech-badge">✏️ Draw.io</span>
+          <span class="tech-badge">💻 VS Code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAK ===== -->
+  <section class="section" id="kontak">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading"><span class="emoji">📬</span> Hubungi Saya</h2>
+        <p class="section-sub">Punya pertanyaan atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya!</p>
+      </div>
+
+      <div class="kontak-grid">
+
+        <!-- Contact Info -->
+        <div class="kontak-info reveal">
+          <div class="kontak-item glass-card" id="kontak-email">
+            <div class="kontak-icon">📧</div>
+            <div>
+              <div class="kontak-label">Email</div>
+              <a href="mailto:ilham@gmail.com" class="kontak-value">ilham@gmail.com</a>
+            </div>
+          </div>
+          <div class="kontak-item glass-card" id="kontak-location">
+            <div class="kontak-icon">📍</div>
+            <div>
+              <div class="kontak-label">Lokasi</div>
+              <span class="kontak-value">Indonesia</span>
+            </div>
+          </div>
+          <div class="kontak-item glass-card" id="kontak-wa">
+            <div class="kontak-icon">💬</div>
+            <div>
+              <div class="kontak-label">WhatsApp</div>
+              <a href="https://wa.me/628818146471" target="_blank" class="kontak-value highlight">+62 881-8146-471</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="kontak-form glass-card reveal reveal-delay" id="contact-form" novalidate>
+          <h3 class="form-title">Kirim Pesan</h3>
+          <div class="form-group">
+            <label for="name" class="form-label">Nama</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="email@contoh.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subjek</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="Subjek pesan" required />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Pesan</label>
+            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="btn-submit">
+            <span class="btn-text">Kirim Pesan 🚀</span>
+            <span class="btn-loading" style="display:none;">Mengirim...</span>
+          </button>
+          <div class="form-success" id="form-success" style="display:none;">
+            ✅ Pesan berhasil dikirim! Saya akan segera menghubungi Anda.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">ILHAM RIZKY PUTRA<span class="dot">.</span></span>
+        <p class="footer-text">© 2025 Ilham Rizky Putra. Dibuat dengan ❤️ dan ☕</p>
+        <div class="footer-links">
+          <a href="#tentang">Tentang</a>
+          <a href="#project">Project</a>
+          <a href="#sertifikat">Sertifikat</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="splash.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
